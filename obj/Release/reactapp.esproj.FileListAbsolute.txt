@@ -1,0 +1,2 @@
+C:\Users\vladi\source\repos\StudyFootball\reactapp\obj\Release\reactapp.esproj.SuggestedBindingRedirects.cache
+C:\Users\vladi\source\repos\StudyFootball\reactapp\obj\Release\reactapp.esproj.CoreCompileInputs.cache
