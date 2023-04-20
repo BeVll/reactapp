@@ -109,7 +109,7 @@ export default class Events extends Component {
     }
     render() {
         return (
-            <div className='events'>
+            <div className='events border-radius'>
                 <h2>Events</h2>
                 {this.props.match.events.map(s =>
                     this.getElement(s)

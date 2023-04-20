@@ -6,7 +6,7 @@ export default class Information extends Component {
     }
     render() {
         return (
-            <div className='information'>
+            <div className='information border-radius-bottom'>
                
                     <div className='infoCol'>
                         <span class="material-symbols-outlined">

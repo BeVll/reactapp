@@ -51,7 +51,7 @@ export default class MatchHeader extends Component {
     }
     render() {
         return (
-            <div className='FullMatchHeader'>
+            <div className='FullMatchHeader border-radius'>
                 {/* <div className='menuHeader'>
                    
                 </div> */}

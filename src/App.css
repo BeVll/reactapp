@@ -2,6 +2,14 @@ body {
   background-color: #090F1C;
 }
 
+.border-radius {
+  border-radius: 15px;
+}
+
+.border-radius-bottom {
+  border-radius: 0 0 15px 15px;
+}
+
 .matchBlock {
   display: flex;
 }
@@ -33,7 +41,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #141724;
-  border-radius: 15px;
   height: auto;
   border: 1px solid #2a324d;
 }
@@ -46,6 +53,7 @@ body {
   padding: 10px 0;
 }
 .matchBlock .content .leftSide .FullMatchHeader .matchHeader {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 100px 1fr;
   position: relative;
@@ -159,7 +167,6 @@ body {
   width: 100%;
   height: auto;
   background-color: #141724;
-  border-radius: 15px;
   margin-top: 30px;
   display: grid;
   grid-template-columns: 40% 20% 40%;
@@ -317,7 +324,6 @@ body {
   width: 100%;
   height: auto;
   background-color: #141724;
-  border-radius: 0 0 15px 15px;
   display: flex;
   justify-content: center;
   border: 1px solid #2a324d;
@@ -406,7 +412,6 @@ body {
   width: 100%;
   height: auto;
   background-color: #141724;
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   border: 1px solid #2a324d;
@@ -648,5 +653,68 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 320px) {
+  .border-radius {
+    border-radius: 0;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+  .border-radius-bottom {
+    border-radius: 0;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+  .sidebarMatch {
+    display: none;
+  }
+  .header {
+    left: 0;
+  }
+  .matchBlock .content {
+    margin: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .matchHeader .teamLogoName {
+    padding: 0 10px !important;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .matchHeader .teamLogoName img {
+    height: 40px !important;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .matchHeader .teamLogoName span {
+    font-size: 16px !important;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .matchHeader .team1 {
+    padding-top: 22px;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .matchHeader .team1 span {
+    margin-left: 10px !important;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .matchHeader .team2 {
+    padding-top: 22px;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .matchHeader .team2 span {
+    margin-right: 10px !important;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .matchHeader .statusHeader .res {
+    font-size: 26px;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .matchHeader .timeBlock .time {
+    font-size: 12px;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .information {
+    font-size: 12px !important;
+  }
+  .matchBlock .content .leftSide .FullMatchHeader .information .material-symbols-outlined {
+    font-size: 18px;
+  }
+  .matchBlock .content .rightSide {
+    width: 100%;
+  }
+  .matchBlock .content .rightSide .table {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=App.css.map */

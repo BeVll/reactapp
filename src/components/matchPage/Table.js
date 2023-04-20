@@ -6,7 +6,7 @@ export default class Table extends Component {
     }
     render() {
         return (
-            <div className='table'>
+            <div className='table border-radius'>
                 <div className='tableHeader'>
                     <img className='logoLeague' src={this.props.table.leagueLogo}></img>
                     <span className='leagueName'>{this.props.table.leagueName}</span>
